@@ -1,23 +1,27 @@
 # Learning Guide
 
-## Publication agreement
+## Project-based approach
 
-On November 2, 2026, the repository owner authorized prepared training updates to be pushed to GitHub without requesting approval for each publication. Publish reviewed updates to the default branch when repository rules permit, then provide the GitHub link. Apply requested corrections in subsequent commits. This authorization does not establish learner lab completion; execution evidence is still required.
+Build practical agentic systems using VERIQTA Academy as a recurring example. Projects connect software engineering concepts to realistic student support, knowledge retrieval and operational workflows.
 
-## Class structure
+The reference environment is Ubuntu on AWS EC2 with Python and vi. Each executable project documents its tested runtime, dependencies and setup requirements.
 
-Use VERIQTA Academy as the recurring project setting. The learner environment is Ubuntu on AWS EC2, Python and the vi editor. Teach through working projects, real-world analogies and complete runnable scripts. Explain each important line and its engineering purpose before asking the learner to run the complete script. Use Python refreshers when the project needs them.
+## Lesson sequence
 
-Consult [PROGRESS.md](PROGRESS.md) before choosing the next exercise. Require learner-provided output or screenshots for completion. Do not infer completion from instructions being delivered or tests run elsewhere.
+1. Examine a real-world scenario and define the expected behavior.
+2. Study the architecture using concrete analogies and explicit trust boundaries.
+3. Read the complete runnable code and explanations of important lines and design decisions.
+4. Execute the project and compare actual output with documented expectations.
+5. Test success and failure paths, investigate errors and improve the implementation.
+6. Complete independent exercises, knowledge checks and a practical assessment.
+7. Document reproducible results and appropriately redacted evidence.
 
-1. Real-world scenario and intended outcomes.
-2. Architecture and essential concepts, explained using concrete analogies.
-3. Complete, copyable scripts with explanations of key lines and decisions.
-4. Run and observe real outputs in the learner environment.
-5. Test expected and failure paths; troubleshoot.
-6. Record evidence and produce a portfolio artifact.
-7. Independent challenge and practical assessment.
+Python refreshers appear where projects require them. AI assistance is permitted; learners remain responsible for reviewing code, understanding its behavior and validating results.
 
-**Instructor standard:** Never label unexecuted code as verified. Explain trade-offs and production limitations. Keep lessons independently reproducible.
+## Navigating the course
 
-**Student standard:** Understand what code does, why it is needed, how it fails, and how to validate it. AI assistance is permitted; critical review is required.
+Use the [roadmap](../ROADMAP.md) to choose a module and the [publication status](PROGRESS.md) to check material availability. Review prerequisites before starting a lesson. Returning learners can use their own evidence records to resume from completed work.
+
+## Completion and evidence
+
+A lab is verified only after its actual results and required checks have been reviewed. Instructions, expected outputs and execution in a different environment do not establish an individual learner's completion. Educational examples must explain production limitations and operational trade-offs.

@@ -8,3 +8,7 @@ Welcome! Contributions that improve accuracy, accessibility, test coverage, docu
 4. Submit a pull request with a clear description and actual evidence.
 
 Do not submit secrets, fabricated execution outputs, copyrighted assets without permission or claims of production readiness without supporting tests. Be respectful and constructive.
+
+## Public documentation standard
+
+Write for a worldwide learning community. Address readers as learners or contributors, use self-contained explanations and state prerequisites explicitly. Keep personal tutoring notes, private conversations, individual progress records and account authorization details out of repository content. Use VERIQTA Academy as a clearly described project example. Publish only authentic, reviewed and appropriately redacted execution evidence.

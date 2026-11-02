@@ -10,7 +10,7 @@
 
 ## Start here
 
-Returning learners: read the [progress record](docs/PROGRESS.md) first. Completed exercises are not automatically restarted.
+Check the [publication status](docs/PROGRESS.md) for available materials. Use the roadmap and lesson prerequisites to choose a starting point.
 
 1. Read the [52-week roadmap](ROADMAP.md) and [learning guide](docs/LEARNING-GUIDE.md).
 2. Follow the [environment setup](docs/SETUP.md).
@@ -64,7 +64,7 @@ Tools are examples, not permanent dependencies. Lessons pin tested versions and 
 ## Repository navigation
 
 - [Roadmap](ROADMAP.md)
-- [Progress and resume point](docs/PROGRESS.md)
+- [Publication status](docs/PROGRESS.md)
 - [Classroom learning guide](docs/LEARNING-GUIDE.md)
 - [Environment setup](docs/SETUP.md)
 - [Project rubric](docs/PROJECT-STANDARDS.md)
