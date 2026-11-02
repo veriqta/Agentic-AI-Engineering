@@ -18,7 +18,7 @@ Check the [publication status](docs/PROGRESS.md) for available materials. Use th
 4. Run the tests and compare your actual outputs with documented expectations.
 5. Build your own version. Never publish credentials, private data, or sensitive infrastructure screenshots.
 
-Start the [Student Support Automation lesson](modules/module-01/week-01/lessons/lesson-01/README.md) for the first guided project.
+Start the [Student Support Automation lesson](modules/module-01/week-01/01-lessons/01-student-support/00-README.md) for the first guided project.
 
 ## What you will learn
 

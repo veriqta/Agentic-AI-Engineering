@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "17-tests/01_test_student_support.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_invalid_request_has_no_success_output (__main__.CommandLineTests.test_invalid_request_has_no_success_output) ... ok\ntest_successful_json_output (__main__.CommandLineTests.test_successful_json_output) ... ok\ntest_unpaid_request_returns_valid_json (__main__.CommandLineTests.test_unpaid_request_returns_valid_json) ... ok\ntest_invalid_statuses (__main__.PaymentTests.test_invalid_statuses) ... ok\ntest_non_paid_statuses (__main__.PaymentTests.test_non_paid_statuses) ... ok\ntest_paid_variations (__main__.PaymentTests.test_paid_variations) ... ok\ntest_approved_response_and_name_cleanup (__main__.ResponseTests.test_approved_response_and_name_cleanup) ... ok\ntest_invalid_names (__main__.ResponseTests.test_invalid_names) ... ok\ntest_unpaid_response (__main__.ResponseTests.test_unpaid_response) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.205s\n\nOK\n"
+}
