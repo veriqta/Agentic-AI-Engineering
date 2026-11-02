@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "system": "Linux",
+  "sha256": {
+    "09-source/first_agent.py": "af2bc9d36f663d7b94e2b6a8508cfd3b5bfc501f0f4753e9afc101d21b37b2e9",
+    "09-source/support_briefing.py": "a88ad06b95c3b0d3c9167f67ea0ce689269ad186e08d8596b3f024d833a192a7",
+    "10-tests/test_day01.py": "76148efead0e7d04c91b77f5e6ed03e47ffb13f051ef7779d7dd09258bea413a"
+  }
+}

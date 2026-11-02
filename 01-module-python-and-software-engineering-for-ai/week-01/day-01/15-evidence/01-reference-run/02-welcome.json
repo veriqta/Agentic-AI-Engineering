@@ -1,0 +1,9 @@
+{
+  "arguments": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "09-source/first_agent.py"
+  ],
+  "exit_code": 0,
+  "stdout": "Welcome to Agentic AI Engineering\n",
+  "stderr": ""
+}

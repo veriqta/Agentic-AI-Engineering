@@ -1,0 +1,6 @@
+{
+  "reference_tests_passed": 3,
+  "controlled_name_error_detected": true,
+  "recovery_tests_passed": 3,
+  "scope": "Local sample briefing only; no model, payment or enrollment integration."
+}

@@ -1,0 +1,9 @@
+{
+  "arguments": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "09-source/support_briefing.py"
+  ],
+  "exit_code": 0,
+  "stdout": "VERIQTA Academy | Student support briefing\nStudent: Sarah\nCourse: Agentic AI Engineering\nRequest: Course access\nStatus: Awaiting review\nNo payment or enrollment checks have been performed.\n",
+  "stderr": ""
+}
