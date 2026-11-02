@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#f1f6f3"/>
+<rect x="40" y="40" width="1000" height="1270" rx="18" fill="white" stroke="#b7cec4"/>
+<g font-family="Arial, sans-serif" fill="#12362b">
+<text x="70" y="88" font-size="22" font-weight="bold">VERIQTA ACADEMY | AGENTIC AI ENGINEERING</text>
+<text x="70" y="145" font-size="36" font-weight="bold">Nine test methods pass</text>
+<text x="70" y="199" font-size="21">Week 01 project | Actual execution, rendered output panel</text>
+<text x="70" y="244" font-size="19">Python 3.12.14 | Local reference environment</text>
+<text x="70" y="286" font-size="21" font-weight="bold">Executed command, interpreter abbreviated as python3</text>
+<text x="70" y="315" font-size="18">PYTHONPATH=03-source python3 -m unittest discover -s 04-tests -v</text>
+<text x="70" y="357" font-size="21" font-weight="bold">Actual test output</text>
+<text x="70" y="386" font-size="18">test_invalid_request_has_no_success_output </text>
+<text x="70" y="410" font-size="18">(test_student_support.CommandLineTests.test_invalid_request_has_no_success_output) ... ok</text>
+<text x="70" y="434" font-size="18">test_successful_json_output </text>
+<text x="70" y="458" font-size="18">(test_student_support.CommandLineTests.test_successful_json_output) ... ok</text>
+<text x="70" y="482" font-size="18">test_unpaid_request_returns_valid_json </text>
+<text x="70" y="506" font-size="18">(test_student_support.CommandLineTests.test_unpaid_request_returns_valid_json) ... ok</text>
+<text x="70" y="530" font-size="18">test_invalid_statuses (test_student_support.PaymentTests.test_invalid_statuses) ... ok</text>
+<text x="70" y="554" font-size="18">test_non_paid_statuses (test_student_support.PaymentTests.test_non_paid_statuses) ... ok</text>
+<text x="70" y="578" font-size="18">test_paid_variations (test_student_support.PaymentTests.test_paid_variations) ... ok</text>
+<text x="70" y="602" font-size="18">test_approved_response_and_name_cleanup </text>
+<text x="70" y="626" font-size="18">(test_student_support.ResponseTests.test_approved_response_and_name_cleanup) ... ok</text>
+<text x="70" y="650" font-size="18">test_invalid_names (test_student_support.ResponseTests.test_invalid_names) ... ok</text>
+<text x="70" y="674" font-size="18">test_unpaid_response (test_student_support.ResponseTests.test_unpaid_response) ... ok</text>
+<text x="70" y="698" font-size="18"> </text>
+<text x="70" y="722" font-size="18">----------------------------------------------------------------------</text>
+<text x="70" y="746" font-size="18">Ran 9 tests in 0.207s</text>
+<text x="70" y="770" font-size="18"> </text>
+<text x="70" y="794" font-size="18">OK</text>
+<text x="70" y="836" font-size="21" font-weight="bold">Actual exit code</text>
+<text x="70" y="865" font-size="18">0</text>
+<text x="70" y="1260" font-size="18">Rendered from real subprocess results, not a screenshot of a learner host.</text>
+<text x="70" y="1288" font-size="18">Raw command, streams, exit status and hashes: 06-evidence/01-reference-run.</text>
+</g></svg>

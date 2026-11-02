@@ -6,19 +6,17 @@
 <p align="center"><strong>Learn by building. Verify with evidence. Engineer for production.</strong></p>
 <p align="center">An open, project-based learning journey by VERIQTA.</p>
 
-> **Status:** Classroom foundation plus the Module 01 Student Support Automation implementation and teaching materials. Its execution milestone is verified; understanding assessments remain open. No week or module completion is claimed.
+## Start your engineering course
 
-## Start here
+You will learn to build, explain, test and improve AI systems through a 52-week course with 13 modules. Begin with ordinary software that behaves predictably, then add models, tools, retrieval, orchestration and production operations. The curriculum develops engineering skills progressively; a course cannot substitute for years of professional operating experience.
 
-Check the [publication status](docs/PROGRESS.md) for available materials. Use the roadmap and lesson prerequisites to choose a starting point.
+1. Read the [classroom blueprint](docs/01-CLASSROOM-BLUEPRINT.md) for the course structure and assessment method.
+2. Review the [52-week roadmap](ROADMAP.md) and [learning guide](docs/LEARNING-GUIDE.md).
+3. Open [Module 01](modules/module-01/README.md), then [Week 01](modules/module-01/01-week-01/README.md).
+4. Start [Lesson 01: Your first program](modules/module-01/01-week-01/01-lessons/01-first-program/README.md). Each lesson explains its commands and code before you execute them.
+5. Build the [weekly Student Support Response Toolkit](modules/module-01/01-week-01/02-weekly-project/README.md) as you complete the six milestones.
 
-1. Read the [52-week roadmap](ROADMAP.md) and [learning guide](docs/LEARNING-GUIDE.md).
-2. Follow the [environment setup](docs/SETUP.md).
-3. Open a module, then choose a lesson. Read its objectives, follow-along lab, and exercises.
-4. Run the tests and compare your actual outputs with documented expectations.
-5. Build your own version. Never publish credentials, private data, or sensitive infrastructure screenshots.
-
-Start the [Student Support Automation lesson](modules/module-01/week-01/01-lessons/01-student-support/00-README.md) for the first guided project.
+The [course availability record](docs/PROGRESS.md) distinguishes published teaching materials from planned content. Your own learning progress depends on execution, understanding and practical assessment. A passing reference suite does not complete your week or module.
 
 ## What you will learn
 
@@ -46,7 +44,7 @@ Start the [Student Support Automation lesson](modules/module-01/week-01/01-lesso
 
 ## Project-first learning standard
 
-Every lesson contains **README, teaching notes, a reproducible lab, source code, tests, exercises, troubleshooting, project documentation and an assessment**. Genuine screenshots are included when the learner completes and verifies the work. Each four-week module concludes with a larger portfolio milestone.
+Every lesson contains **README, teaching notes, a reproducible lab, source code, tests, exercises, troubleshooting, project documentation and an assessment**. Reference visuals show authentic captured output and link to raw records. You produce your own execution evidence during the labs. Each four-week module concludes with a larger portfolio milestone.
 
 ## Technology map
 

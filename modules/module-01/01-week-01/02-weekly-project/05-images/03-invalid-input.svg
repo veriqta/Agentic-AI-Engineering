@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#f1f6f3"/>
+<rect x="40" y="40" width="1000" height="1270" rx="18" fill="white" stroke="#b7cec4"/>
+<g font-family="Arial, sans-serif" fill="#12362b">
+<text x="70" y="88" font-size="22" font-weight="bold">VERIQTA ACADEMY | AGENTIC AI ENGINEERING</text>
+<text x="70" y="145" font-size="36" font-weight="bold">Invalid input stops the request</text>
+<text x="70" y="199" font-size="21">Week 01 project | Actual execution, rendered output panel</text>
+<text x="70" y="244" font-size="19">Python 3.12.14 | Local reference environment</text>
+<text x="70" y="286" font-size="21" font-weight="bold">Executed command, interpreter abbreviated as python3</text>
+<text x="70" y="315" font-size="18">python3 03-source/student_support.py --name Sarah --payment-status unknown</text>
+<text x="70" y="357" font-size="21" font-weight="bold">Actual stdout</text>
+<text x="70" y="386" font-size="18">(empty stream)</text>
+<text x="70" y="428" font-size="21" font-weight="bold">Actual stderr</text>
+<text x="70" y="457" font-size="18">ERROR Request rejected: Unsupported payment status.</text>
+<text x="70" y="499" font-size="21" font-weight="bold">Actual exit code</text>
+<text x="70" y="528" font-size="18">2</text>
+<text x="70" y="570" font-size="21" font-weight="bold">What this demonstrates</text>
+<text x="70" y="599" font-size="18">The unsupported status was rejected before any success JSON was emitted.</text>
+<text x="70" y="1260" font-size="18">Rendered from real subprocess results, not a screenshot of a learner host.</text>
+<text x="70" y="1288" font-size="18">Raw command, streams, exit status and hashes: 06-evidence/01-reference-run.</text>
+</g></svg>
