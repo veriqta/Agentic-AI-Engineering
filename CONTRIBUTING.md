@@ -19,3 +19,7 @@ Write for a worldwide learning community. Address readers as learners or contrib
 For every lesson, project or documentation change, create a descriptive feature branch from the latest main, review the change, run relevant checks and open a pull request targeting main. Include actual test results, evidence limits and unfinished assessments. The repository owner reviews and merges. Do not push directly to main, merge automatically, publish packages, create releases or deploy as part of classroom publication.
 
 Every lesson must teach independently: objectives, necessary prerequisites, detailed command explanations, complete code, walkthroughs, tests, knowledge checks with separate answers, assessment criteria, troubleshooting and evidence. Use Sarah for example people and VERIQTA for organizations and systems. Use veriqta for lowercase technical identifiers.
+
+## Numbered classroom navigation and weekly projects
+
+Number lesson documents, source references, tests, images and supporting directories in their reading order. Keep conventional repository/week README entry points where GitHub requires them for navigation. Every week develops one substantial follow-along project through bounded lesson milestones. Explain commands and important code before execution. Capture actual output for reference visuals and label any rendering clearly; retain raw results. Never fabricate terminal evidence or infer learner completion from publisher runs.
