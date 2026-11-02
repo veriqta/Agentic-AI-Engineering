@@ -8,10 +8,10 @@
 
 **Portfolio milestone:** Student Support Automation Toolkit.
 
-- Week 1: Understand the problem and build the baseline.
-- Week 2: Integrate a meaningful capability.
-- Week 3: Test, debug, secure and measure.
-- Week 4: Complete the project, document evidence and review.
+- Week 1: Build the Student Support Response Toolkit through Python foundations, functions, validation, a CLI and introductory tests.
+- Week 2: Develop professional Python structure, environments, configuration and structured file data.
+- Week 3: Integrate APIs and external systems with explicit contracts, timeouts and failure handling.
+- Week 4: Integrate the module project, investigate failures, document evidence and complete the module assessment.
 
 ## Module 02: LLMs & Agent Fundamentals (Weeks 5–8)
 

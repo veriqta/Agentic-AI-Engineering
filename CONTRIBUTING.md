@@ -11,7 +11,7 @@ Do not submit secrets, fabricated execution outputs, copyrighted assets without 
 
 ## Public documentation standard
 
-Write for a worldwide learning community. Address readers as learners or contributors, use self-contained explanations and state prerequisites explicitly. Keep personal tutoring notes, private conversations, individual progress records and account authorization details out of repository content. Use VERIQTA Academy as a clearly described project example. Publish only authentic, reviewed and appropriately redacted execution evidence.
+Write for a worldwide learning community. Address the public reader directly as “you”, use self-contained explanations and state prerequisites explicitly. Keep personal tutoring notes, private conversations, individual progress records and account authorization details out of repository content. Use VERIQTA Academy as a clearly described project example. Publish only authentic, reviewed and appropriately redacted execution evidence.
 
 
 ## Required branch and review workflow
@@ -22,4 +22,4 @@ Every lesson must teach independently: objectives, necessary prerequisites, deta
 
 ## Numbered classroom navigation and weekly projects
 
-Number lesson documents, source references, tests, images and supporting directories in their reading order. Keep conventional repository/week README entry points where GitHub requires them for navigation. Every week develops one substantial follow-along project through bounded lesson milestones. Explain commands and important code before execution. Capture actual output for reference visuals and label any rendering clearly; retain raw results. Never fabricate terminal evidence or infer learner completion from publisher runs.
+Number instructional documents and supporting directories in their reading order. Preserve conventional README.md entry points and importable Python filenames such as student_support.py and test_student_support.py inside numbered source and test folders. Keep conventional repository/week README entry points where GitHub requires them for navigation. Every week develops one substantial follow-along project through bounded lesson milestones. Explain commands and important code before execution. Capture actual output for reference visuals and label any rendering clearly; retain raw results. Never fabricate terminal evidence or infer learner completion from publisher runs.

@@ -1,26 +1,24 @@
-# Module 01: Python & Software Engineering for AI
+# Module 01: Python and Software Engineering for AI
 
-**Duration:** Four weeks. **Core topics:** Python, APIs, JSON, Git, testing, debugging.
+You will build the software foundation required to develop dependable AI tools and agents. You will begin with a small program, trace data and decisions, organize behavior into functions, validate input, test it and connect it to external systems in later weeks.
 
-**Portfolio milestone:** Student Support Automation Toolkit.
+## Start here
 
-## Module goals
+Open [Week 01: Python foundations](01-week-01/README.md). Start with Lesson 01 unless you can already demonstrate its outcomes. If you have completed an equivalent exercise, use its assessment to confirm your understanding instead of repeating every command.
 
-Understand the architecture, implement a working system, evaluate its behavior, and explain security, reliability and operational trade-offs.
+## Four-week route
 
-## Weekly learning path
-
-| Week | Focus | State |
+| Week | What you will learn | Project contribution |
 |---|---|---|
-| [01](week-01/README.md) | Python foundations through student support | In progress; execution milestone verified, assessment pending |
-| 02 | Professional Python development | Planned |
-| 03 | APIs and external systems | Planned |
-| 04 | Integrated project and assessment | Planned |
+| [01: Python foundations](01-week-01/README.md) | Programs, values, decisions, functions, validation, CLI and introductory testing | Student Support Response Toolkit |
+| 02: Professional Python | Structured student data, files, modules, configuration, environments and maintainability | Maintainable toolkit with stored inputs |
+| 03: APIs and external systems | HTTP, JSON contracts, authentication boundaries, timeouts and failures | Safe external-system integration |
+| [04: Integration and module assessment](04-week-04/README.md) | End-to-end behavior, debugging, security review and demonstration | Integrated Student Support Automation Toolkit |
 
-## Classroom lessons
+Week 02 and Week 03 teaching material has not been authored yet. Week 04 currently contains the project brief and assessment requirements, not a completed implementation. These labels describe course availability, not your personal progress.
 
-[Lesson 01: Student Support Automation](week-01/01-lessons/01-student-support/00-README.md) includes full notes, a guided lab, code walkthrough, source, tests, knowledge checks, practical assessment and troubleshooting.
+## Your module outcome
 
-## Portfolio deliverable
+You will explain the toolkit's architecture, reproduce its behavior, test success and failure paths, diagnose a realistic defect and document evidence. The final module project belongs inside Week 04. Passing the Week 01 suite alone does not meet the module outcome.
 
-The [Student Support Automation Toolkit](05-module-project/README.md) requires all four weeks and a separate integrated assessment. Module 01 remains in progress.
+[Course blueprint](../../docs/01-CLASSROOM-BLUEPRINT.md) | [52-week roadmap](../../ROADMAP.md)
