@@ -1,240 +1,125 @@
-# 02. Guided Follow-Along Lab
+# 02. Your First Guided Python Lab
 
-## How to follow this lab
+## Start with the words
 
-Read each explanation before executing its command. Run one command at a time and observe its actual result. The commands are intended for a Linux shell such as Bash. They are not Python statements and should not be pasted at a >>> prompt.
+A file is a saved item of information. A folder, also called a directory, groups files. A Python source file contains instructions written as text. The Python interpreter executes those instructions. Your terminal lets you enter commands; its shell reads those commands and starts programs.
 
-This lab creates a separate practice directory. It does not modify your public GitHub repository, create cloud resources or overwrite existing work intentionally. If a target file already exists, inspect it before editing. If you already have a verified first_agent.py, use that file to demonstrate the outcome and continue to the briefing rather than recreating it unnecessarily.
+There are two places to distinguish. The repository organizes teaching material for visitors. Your own practice folder is where you build an application. A folder number in this repository is not Python syntax and is not a required project structure.
 
-## 1. Identify your working environment
+## 1. Prepare Python and the editor
 
-Confirm whether your terminal is local or connected to an authorized remote machine. Work in the environment where you intend to save and run the source. An SSH connection displays a remote shell, even though the terminal window is on your laptop.
+If you have not installed Python, follow [the complete Ubuntu setup](00-ubuntu-python-setup.md). It gives the exact current-version download, checksum, build, installation and verification commands. Do not guess how to install it. That guide targets Ubuntu 24.04 LTS and Python 3.15.2 as checked on November 2, 2026.
 
-pwd asks the shell to print its current working directory. Its output is an absolute path. Your exact path depends on the machine and account; there is no universal username or home-directory output to match.
-
-```bash
-pwd
-```
-
-Checkpoint. You can identify which machine owns this directory. Do not publish the prompt, host address or unnecessary account information when saving evidence.
-
-## 2. Check Python before relying on it
-
-python3 selects the Python executable available in this shell. --version requests its version and exits without running application source. You need a supported Python 3.12-or-later environment for the course reference.
+python3 starts the interpreter selected by this shell. --version asks it to identify itself instead of running a script.
 
 ```bash
 python3 --version
 ```
 
-Expected shape, with your actual version in place of the placeholder:
+Expected result after following the current-version setup:
 
 ```text
-Python <your installed version>
+Python 3.15.2
 ```
 
-If the shell reports command not found, Python is not available under that command in this environment. Stop and resolve the environment using supported operating-system instructions. Installing unrelated Python packages will not fix a missing interpreter.
+If you see a different version, check the setup guide's PATH selection step. If the command is missing, installation has not been verified. Do not copy a reference version into your own execution record.
 
-The shell command command -v reports which executable or command definition it will select. Here -v requests the located command. You use this when multiple Python installations might exist; a different installation path is not automatically a problem.
+## 2. Create one folder
+
+You will use an ordinary practice folder named veriqta-day-01. You will place the Python files directly inside it. No separate source or test directory is needed.
+
+mkdir creates the folder. -p permits an existing folder. ~ expands to your home directory in this shell. It does not delete existing contents.
 
 ```bash
-command -v python3
+mkdir -p ~/veriqta-day-01
 ```
 
-Expect a path or command definition appropriate to your shell. Record the version you actually used. You do not need to copy the reference environment's executable path.
+Expected result. Normally no text and a return to the prompt. Quiet success is normal.
 
-## 3. Create a dedicated practice location
-
-mkdir creates directories. -p creates missing parent directories and accepts ones that already exist. The leading ~ expands in this shell to your home directory. The nested path keeps the module, week and day together. This command does not remove existing contents.
+cd enters the folder. It changes where subsequent filenames are interpreted.
 
 ```bash
-mkdir -p ~/veriqta-agentic-ai/module-01/week-01/day-01
+cd ~/veriqta-day-01
 ```
 
-cd changes this shell's working directory. It does not copy files and does not change the location of a different open terminal session.
+Expected result. Normally no text. If the shell reports that the directory does not exist, inspect the preceding command rather than proceeding with a guessed location.
 
-```bash
-cd ~/veriqta-agentic-ai/module-01/week-01/day-01
-```
-
-Now use pwd to confirm where relative paths will begin. Expect a path ending in veriqta-agentic-ai/module-01/week-01/day-01.
+pwd prints your current folder's absolute path.
 
 ```bash
 pwd
 ```
 
-Create the two implementation folders. They mirror the numbered source and test folders in the public lesson. Both arguments belong to the same mkdir command, which creates both locations.
+Expected shape. A path ending in /veriqta-day-01. Your username and home-directory prefix may differ from another reader's.
 
-```bash
-mkdir -p 09-source 10-tests
-```
-
-ls lists the visible entries in the current directory. Expect 09-source and 10-tests, possibly alongside your existing files. Listing order or color may differ.
+ls lists the visible filenames in that folder. Inspect existing work before editing.
 
 ```bash
 ls
 ```
 
-Checkpoint. You can explain why the next source path begins with 09-source instead of starting at the filesystem root.
+Expected result. A new folder is normally empty and prints no filenames. If files exist, retain or inspect them before deciding what to change.
 
-## 4. Save your first script with vi
+## 3. Understand the next command before typing it
 
-Before creating a file, inspect the source folder. This avoids treating an existing exercise as if it were empty.
-
-```bash
-ls 09-source
-```
-
-vi opens the specified file for editing. If first_agent.py exists, inspect it. If it is new, vi creates an editing buffer, and saving will write the new file into the existing 09-source directory.
+vi first_agent.py opens the editor for a file named first_agent.py in this folder. The .py suffix identifies Python source to readers and tools. It does not execute the file.
 
 ```bash
-vi 09-source/first_agent.py
+vi first_agent.py
 ```
 
-Press i to enter insertion mode. Enter the complete source below. The # line is a comment. The print call writes the quoted message. Read the first section of the [walkthrough](03-code-walkthrough.md) if any part is unfamiliar.
+Expected result. The screen changes to vi, displaying the file or a new editing buffer. Press i to enter insertion mode. Enter these complete instructions:
 
 ```python
 # Introductory Python execution example. No model or agent loop is used.
 print("Welcome to Agentic AI Engineering")
 ```
 
-Press Esc to return to normal mode. Type :wq and press Enter to save and quit. The characters :wq are editor instructions; do not insert them into Python source. If you are unsure whether vi is in insertion mode, press Esc first.
+The comment states the scope. print is a built-in output function. Parentheses call it and contain its argument. Quotes delimit the string; the quote characters are not part of the displayed welcome. The filename is an introductory label, not proof that this script has an AI agent loop.
 
-cat displays the saved file as text. It does not execute the program. Use it to confirm that your source, not the editor command, was written to disk.
+Press Esc to leave insertion mode. Type :wq and press Enter to save and quit. Expect to return to the shell. These keystrokes belong to the editor, not inside the Python file.
 
-```bash
-cat 09-source/first_agent.py
-```
+## 4. Inspect before running
 
-Expected result. The two source lines above are displayed. If the file is empty or contains editor commands, correct the saved source before executing it.
-
-## 5. Execute the first script
-
-python3 starts the interpreter. 09-source/first_agent.py tells it which saved file to read relative to your current directory. You do not need sudo, pip or chmod for this invocation.
+cat displays the saved source. It does not execute Python.
 
 ```bash
-python3 09-source/first_agent.py
+cat first_agent.py
 ```
 
-Expected stdout:
+Expected result. The two source lines above. If you see missing text or editor instructions such as :wq in the file, correct it before execution.
+
+Now the shell starts Python, and Python opens the named file from the current folder.
+
+```bash
+python3 first_agent.py
+```
+
+Expected result:
 
 ```text
 Welcome to Agentic AI Engineering
 ```
 
-The interpreter should finish and return control to the shell. The program does not remain running as an assistant. Your shell prompt is not part of the program's output.
+After printing, the program finishes. It does not remain running as a background assistant.
 
-Immediately inspect the previous command's exit status. echo writes its argument; $? expands to the status of the preceding command. Do not run another command first.
+## 5. Explain each part of a run command
 
-```bash
-echo $?
-```
+| Part | Meaning |
+|---|---|
+| python3 | The program that reads and executes Python instructions |
+| first_agent.py | The saved source file to execute |
+| Current folder | The place where that relative filename is looked up |
+| print statement | The application instruction producing the welcome |
 
-Expected result for a successful run:
+You do not type a repository folder number into the command unless the file actually lives in that child folder and you are running from its parent. In this lab, the file lives beside you in your current folder, so the simple filename is correct.
 
-```text
-0
-```
+## 6. Build the complete project
 
-Checkpoint. You can identify the executable, the script path and the statement responsible for the message. You can also explain why exit 0 does not make the script an AI agent.
+Continue with [the complete follow-along project](04-project.md). It starts from the same empty-folder assumption and supplies every command, every Python file, editor action, expected result, test and debugging step. If you have already completed its welcome-program steps here, inspect them and continue to its support-briefing stage.
 
-## 6. Build the support briefing
+The project does not merely list requirements and send you away to invent an implementation. You will build it in order, compare outputs and complete the practical review.
 
-You will now use named values and formatted strings to display a support request consistently. Your example describes Sarah's request, not a real student record. No input form or external service is involved.
+## 7. Keep real evidence
 
-Open a separate file so that the first exercise remains intact. vi edits the path in the same source folder.
-
-```bash
-vi 09-source/support_briefing.py
-```
-
-Read the briefing section of the [walkthrough](03-code-walkthrough.md) before entering this code. The first string documents the module. The assignments define the sample information. Each formatted print call inserts one value into the report.
-
-```python
-"""Display a simulated VERIQTA Academy support request briefing."""
-
-academy_name = "VERIQTA Academy"
-student_name = "Sarah"
-course_name = "Agentic AI Engineering"
-request_topic = "Course access"
-request_status = "Awaiting review"
-
-print(f"{academy_name} | Student support briefing")
-print(f"Student: {student_name}")
-print(f"Course: {course_name}")
-print(f"Request: {request_topic}")
-print(f"Status: {request_status}")
-print("No payment or enrollment checks have been performed.")
-```
-
-Use Esc, then :wq and Enter to save and leave vi. Review the saved source using cat. This catches unsaved or accidentally pasted editor text before execution.
-
-```bash
-cat 09-source/support_briefing.py
-```
-
-Predict the six output lines. Identify which lines use variable values and which line is a fixed limitation sentence.
-
-## 7. Run the project milestone
-
-Start Python with the new script's relative path. The program assigns the sample values and prints the report in source order. It does not ask for interactive input.
-
-```bash
-python3 09-source/support_briefing.py
-```
-
-Expected stdout:
-
-```text
-VERIQTA Academy | Student support briefing
-Student: Sarah
-Course: Agentic AI Engineering
-Request: Course access
-Status: Awaiting review
-No payment or enrollment checks have been performed.
-```
-
-There should be no application diagnostic on stderr for this successful reference run. Inspect echo $? immediately if you need to confirm the process status. Compare meaning and exact text with the documented contract, rather than assuming any visible output is correct.
-
-Checkpoint. Trace student_name from its assignment to the formatted Student line. Explain why the report's status is a supplied example value, not a database lookup.
-
-## 8. Save a real output record
-
-You can save stdout in a text file for comparison. In the shell, > redirects stdout and overwrites the destination if it exists. Choose a fresh practice filename so that you do not replace evidence you want to keep. The named source file is read; the named output file receives the displayed report.
-
-```bash
-python3 09-source/support_briefing.py > briefing-output.txt
-```
-
-A quiet terminal is expected because stdout went to the file. It does not mean the program failed. cat displays the saved result without rerunning the application.
-
-```bash
-cat briefing-output.txt
-```
-
-Expect the same six-line briefing. Do not paste the expected output into that file and describe it as an execution record. Save the command alongside the actual result in your own work notes.
-
-## 9. Investigate a safe path failure
-
-You will intentionally ask Python to open a filename that this lab never created. This changes no source file. The purpose is to identify a file-selection problem before trying to repair valid code.
-
-```bash
-python3 09-source/missing_briefing.py
-```
-
-Expected behavior. Python reports that it cannot open that file. Exact wording and paths vary. The result should be a nonzero exit status. Inspect it immediately with echo $? if needed.
-
-Use pwd to confirm your location and ls 09-source to inspect actual filenames. The real script is support_briefing.py. Run that correct path again and verify the normal report. You did not need to alter print statements or install dependencies to correct the mistake.
-
-Checkpoint. State which boundary failed and what evidence identified the cause. A failed path lookup is different from a SyntaxError or NameError inside an existing source file.
-
-## 10. Prepare automated verification
-
-Read [Testing and verification](05-testing-and-verification.md). It provides the complete test file, explains its execution command and shows how the checks observe real processes. Save the test file in 10-tests using the instructions there.
-
-This supported verification step introduces test execution without requiring you to master classes or design a complete testing framework on your first day. You should still explain what the tests check and what they do not establish.
-
-## 11. Finish with understanding and evidence
-
-Complete the [project milestone](04-project.md), attempt the [knowledge check](07-knowledge-check.md) before its answers, then perform the [practical assessment](11-practical-assessment.md). Use the [troubleshooting guide](12-troubleshooting.md) for actual failures.
-
-Your record should include the saved source, version, commands, actual report, test result and diagnosed problem. If a checkpoint is unclear, revisit the relevant note or walkthrough section before progressing. Source execution alone is not proof of understanding.
+Record your actual version, command and output. If execution fails, retain the diagnostic and investigate its cause. Use the [walkthrough](03-code-walkthrough.md) and [troubleshooting](12-troubleshooting.md) when needed. An expected-output example is a prediction, not proof that your machine executed it.

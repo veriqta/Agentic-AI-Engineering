@@ -1,0 +1,35 @@
+{
+  "version": {
+    "arguments": [
+      "/workspace/scratch/ee39b20e2243/python-release-build/python-3.15.2/bin/python3",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "Python 3.15.2\n",
+    "stderr": ""
+  },
+  "pip": {
+    "arguments": [
+      "/workspace/scratch/ee39b20e2243/python-release-build/python-3.15.2/bin/python3",
+      "-m",
+      "pip",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "pip 26.2.2 from /workspace/scratch/ee39b20e2243/python-release-build/python-3.15.2/lib/python3.15/site-packages/pip (python 3.15)\n",
+    "stderr": ""
+  },
+  "ssl": {
+    "arguments": [
+      "/workspace/scratch/ee39b20e2243/python-release-build/python-3.15.2/bin/python3",
+      "-c",
+      "import ssl; print(ssl.OPENSSL_VERSION)"
+    ],
+    "exit_code": 0,
+    "stdout": "OpenSSL 3.0.13 30 Jan 2024\n",
+    "stderr": ""
+  },
+  "source_release": "https://www.python.org/downloads/release/python-3152/",
+  "archive_sha256": "8b5536d280142ecf6cdfe15d12a21ba1c65e300bbf7b28a8d0cdb849575797de",
+  "scope": "Source downloaded, checksum verified, configured, built and privately installed on the existing Ubuntu 24.04 reference environment. The apt package-install step was documented but not rerun on a clean Ubuntu image. This record does not claim full standard-library validation."
+}

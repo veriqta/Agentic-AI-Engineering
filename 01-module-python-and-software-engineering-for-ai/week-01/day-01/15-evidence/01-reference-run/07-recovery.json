@@ -1,14 +1,12 @@
 {
   "arguments": [
-    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/ee39b20e2243/python-release-build/python-3.15.2/bin/python3",
     "-m",
     "unittest",
-    "discover",
-    "-s",
-    "10-tests",
-    "-v"
+    "-v",
+    "test_day01"
   ],
   "exit_code": 0,
   "stdout": "",
-  "stderr": "test_briefing_contract (test_day01.Day01ExecutionTests.test_briefing_contract) ... ok\ntest_briefing_from_another_working_directory (test_day01.Day01ExecutionTests.test_briefing_from_another_working_directory) ... ok\ntest_first_program_output (test_day01.Day01ExecutionTests.test_first_program_output) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.089s\n\nOK\n"
+  "stderr": "test_briefing_contract (test_day01.Day01ExecutionTests.test_briefing_contract) ... ok\ntest_briefing_from_another_working_directory (test_day01.Day01ExecutionTests.test_briefing_from_another_working_directory) ... ok\ntest_first_program_output (test_day01.Day01ExecutionTests.test_first_program_output) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.086s\n\nOK\n"
 }

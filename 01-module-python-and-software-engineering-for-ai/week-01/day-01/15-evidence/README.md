@@ -17,9 +17,13 @@ This record establishes the local reference behavior for Day 01. It does not gra
 
 The actual version is in the environment record. This run does not demonstrate compatibility with every supported Python release or system. Temporary paths and execution durations will vary.
 
+## Current-version installation check
+
+The [installation record](01-reference-run/09-python-install.json) records the verified official archive hash, Python 3.15.2 version, pip and SSL results from the private reference build. The source download, checksum, configuration, compilation and private installation were executed. The apt package-install step in the beginner guide was documented rather than repeated on a clean Ubuntu image. The reference used available build headers; this does not establish a complete fresh-machine installation or validation of every optional standard-library component.
+
 ## Reproduce the investigation
 
-Inspect [reproduce_reference.py](reproduce_reference.py). It copies source and tests into a temporary directory, runs bounded subprocesses and records arguments, stdout, stderr and exit status. It deliberately misspells the Student field's variable in that temporary copy, confirms NameError appears in a failing suite, restores the source and confirms three methods pass again. It does not edit the original application.
+Inspect [reproduce_reference.py](reproduce_reference.py). It copies the project folder's three Python files into a temporary directory, runs bounded subprocesses and records arguments, stdout, stderr and exit status. It deliberately misspells the Student field's variable in that temporary copy, confirms NameError appears in a failing suite, restores the source and confirms three methods pass again. It does not edit the original application.
 
 From the repository's day-01 directory, python3 selects the interpreter, the next path selects the evidence tool, and --output names a new destination. The tool refuses an existing destination to preserve prior records.
 

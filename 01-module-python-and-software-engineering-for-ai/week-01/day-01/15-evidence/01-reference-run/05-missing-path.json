@@ -1,9 +1,9 @@
 {
   "arguments": [
-    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
-    "09-source/missing_briefing.py"
+    "/workspace/scratch/ee39b20e2243/python-release-build/python-3.15.2/bin/python3",
+    "missing_briefing.py"
   ],
   "exit_code": 2,
   "stdout": "",
-  "stderr": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3: can't open file '/tmp/tmpr2cbnf8c/09-source/missing_briefing.py': [Errno 2] No such file or directory\n"
+  "stderr": "/workspace/scratch/ee39b20e2243/python-release-build/python-3.15.2/bin/python3: can't open file '/tmp/tmpm82p7tz4/missing_briefing.py': [Errno 2] No such file or directory\n"
 }

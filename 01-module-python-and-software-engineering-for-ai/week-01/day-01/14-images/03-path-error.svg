@@ -6,20 +6,19 @@
 <text x="70" y="156" font-size="36" font-weight="700">Investigate a missing script path</text>
 <text x="70" y="210" font-size="23">Module 01, Week 01, Day 01</text>
 <text x="70" y="253" font-size="21">Actual execution, rendered output panel</text>
-<text x="70" y="290" font-size="20">Python 3.12.14 | Linux reference run</text>
+<text x="70" y="290" font-size="20">Python 3.15.2 | Linux reference run</text>
 <text x="70" y="339" font-size="22" font-weight="700">Executed command, interpreter abbreviated</text>
-<text x="70" y="370" font-size="19">python3 09-source/missing_briefing.py</text>
+<text x="70" y="370" font-size="19">python3 missing_briefing.py</text>
 <text x="70" y="415" font-size="22" font-weight="700">Actual stdout</text>
 <text x="70" y="446" font-size="19">(empty stream)</text>
 <text x="70" y="491" font-size="22" font-weight="700">Actual stderr</text>
-<text x="70" y="522" font-size="19">/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3: can&#x27;t open </text>
-<text x="70" y="548" font-size="19">file &#x27;/tmp/tmpr2cbnf8c/09-source/missing_briefing.py&#x27;: [Errno 2] No such file or </text>
-<text x="70" y="574" font-size="19">directory</text>
-<text x="70" y="619" font-size="22" font-weight="700">Actual exit status</text>
-<text x="70" y="650" font-size="19">2</text>
-<text x="70" y="695" font-size="22" font-weight="700">Interpretation</text>
-<text x="70" y="726" font-size="19">Python started but could not open the selected file. Inspect the location and filename</text>
-<text x="70" y="752" font-size="19"> before changing valid source.</text>
+<text x="70" y="522" font-size="19">/workspace/scratch/ee39b20e2243/python-release-build/python-3.15.2/bin/python3: can&#x27;t </text>
+<text x="70" y="548" font-size="19">open file &#x27;/tmp/tmpm82p7tz4/missing_briefing.py&#x27;: [Errno 2] No such file or directory</text>
+<text x="70" y="593" font-size="22" font-weight="700">Actual exit status</text>
+<text x="70" y="624" font-size="19">2</text>
+<text x="70" y="669" font-size="22" font-weight="700">Interpretation</text>
+<text x="70" y="700" font-size="19">Python started but could not open the selected file. Inspect the location and filename</text>
+<text x="70" y="726" font-size="19"> before changing valid source.</text>
 <text x="70" y="1250" font-size="19">Captured subprocess output. This panel is not a terminal photograph.</text>
 <text x="70" y="1283" font-size="18">Raw commands, streams, status and hashes: 15-evidence/01-reference-run.</text>
 </g></svg>

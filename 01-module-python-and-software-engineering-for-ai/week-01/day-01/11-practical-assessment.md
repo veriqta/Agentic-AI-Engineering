@@ -6,7 +6,7 @@ You will reproduce the Day 01 briefing, explain its execution and diagnose one c
 
 ## Part A. Reproduce and inspect
 
-From your day practice directory, identify the environment and Python version. Show the saved source for both scripts. Execute the welcome script and the support briefing using the correct paths. Compare the actual output with the contracts. Execute the test suite and confirm that three methods were discovered.
+From your veriqta-day-01 practice directory, identify the environment and Python version. Show the saved source for both scripts. Execute the welcome script and the support briefing using the correct paths. Compare the actual output with the contracts. Execute the test suite and confirm that three methods were discovered.
 
 Evidence. Keep your actual version, exact commands, output and complete test summary. If a result differs, retain the failure and investigate before claiming verification. A screenshot of someone else's result is not your execution record.
 
@@ -21,20 +21,26 @@ Evidence. A short written explanation or annotated source is sufficient. The exp
 Keep the working implementation intact. cp copies a file, and -i asks before replacing an existing destination. The first path is the source and the second is a separate debugging copy. If the destination exists and you want to preserve it, decline replacement and choose a fresh filename.
 
 ```bash
-cp -i 09-source/support_briefing.py 09-source/support_briefing_debug.py
+cp -i support_briefing.py support_briefing_debug.py
 ```
+
+Expected result. Normally quiet success and a new support_briefing_debug.py beside the original. If asked about replacement, decline when you need to preserve an existing copy.
 
 vi opens only the debugging copy. Use insertion mode to change the reference in the Student print line from student_name to student_nam. Leave the assignment unchanged. Save with Esc, then :wq and Enter.
 
 ```bash
-vi 09-source/support_briefing_debug.py
+vi support_briefing_debug.py
 ```
+
+Expected result. vi opens the debugging copy. The original source is not selected.
 
 Before executing, predict the failure category and the point where execution stops. Python will run the copied file selected below; your original source is unaffected.
 
 ```bash
-python3 09-source/support_briefing_debug.py
+python3 support_briefing_debug.py
 ```
+
+Expected result before correction. The heading can print, followed by NameError for student_nam and a nonzero status. After correction, expect the complete six-line briefing and exit 0.
 
 Inspect the actual traceback. Explain why earlier output may appear before NameError and why a partially printed report is not a complete successful result. Inspect the exit status immediately using echo $?. Correct the misspelled name in the debugging copy, save and rerun that same command. Then run the original test suite to confirm the reference remains correct.
 

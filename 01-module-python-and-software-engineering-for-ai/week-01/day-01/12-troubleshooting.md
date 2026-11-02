@@ -30,7 +30,7 @@ Observation. The interpreter reports that it cannot open the selected file, ofte
 
 Likely causes. Your current directory is wrong, the filename is misspelled, the file was saved somewhere else or its capitalization differs.
 
-Investigation. Use pwd and ls 09-source from the expected day directory. Compare the exact filename with the argument supplied to Python. A valid relative path from one directory can be invalid from another.
+Investigation. Use pwd and ls from the expected day directory. Compare the exact filename with the argument supplied to Python. A valid relative path from one directory can be invalid from another.
 
 Correction. Select the correct location or path. Preserve the source. Installing pip packages does not repair a wrong script path.
 
@@ -42,7 +42,7 @@ Observation. vi reports that it cannot open the file for writing or indicates a 
 
 Likely causes. A parent directory does not exist, the path is wrong or you do not have ordinary write permission there.
 
-Investigation. Confirm the intended path and parent folders. Use a practice directory you own. The lab creates 09-source before opening its child file.
+Investigation. Confirm the intended path and parent folders. Use a practice directory you own. The lab creates veriqta-day-01 and enters it before opening a file directly inside it.
 
 Correction. Choose the correct writable practice directory and preserve any existing work. Do not use sudo as a routine editor fix. Do not discard unsaved text with :q! unless you deliberately intend to lose it.
 
@@ -112,7 +112,7 @@ Observation. unittest reports Ran 0 tests and may still show OK.
 
 Likely causes. The start directory, test filename or test method names are wrong.
 
-Investigation. Run discovery from the day directory. Check that 10-tests contains test_day01.py and its methods begin with test_. The source files belong in the sibling 09-source folder.
+Investigation. Run the documented test command from veriqta-day-01. Check that test_day01.py, first_agent.py and support_briefing.py are directly beside one another and test methods begin with test_.
 
 Correction. Restore the documented layout and discovery command. No PYTHONPATH setting is required because this test suite launches source files by path instead of importing them as application modules.
 

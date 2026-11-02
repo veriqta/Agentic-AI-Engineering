@@ -26,7 +26,7 @@ By the end of this class, you should be able to:
 
 ## What you need
 
-Use a Linux shell, Python 3.12 or later, vi and permission to create a practice directory. Ubuntu is the reference platform. A local Linux machine is sufficient. If you use Ubuntu on EC2, use your existing authorized SSH session; this class does not create an instance or change cloud configuration.
+You need a Linux shell and permission to create a practice folder. If Python or vi is missing, start with the complete setup guide below. This edition uses Ubuntu 24.04 LTS and pins Python 3.15.2 as checked on November 2, 2026. A local Linux machine is sufficient. If you use Ubuntu on EC2, use your existing authorized SSH session; this class does not create an instance or change cloud configuration.
 
 The implementation uses only Python's standard library. You do not need pip packages, API keys, a model account or real student records. Check your actual installed version before proceeding. A version shown in a reference image does not establish your own environment.
 
@@ -34,6 +34,7 @@ The implementation uses only Python's standard library. You do not need pip pack
 
 | Order | Material | What you will do |
 |---|---|---|
+| 00 | [Ubuntu and Python setup](00-ubuntu-python-setup.md) | Install the pinned Python version and editor with explained commands |
 | 01 | [Instructor notes](01-notes.md) | Understand the environment, problem and programming concepts |
 | 02 | [Guided follow-along lab](02-follow-along-lab.md) | Build, save, execute and inspect both scripts |
 | 03 | [Code walkthrough](03-code-walkthrough.md) | Explain every important application line and the reference checks |
@@ -42,8 +43,8 @@ The implementation uses only Python's standard library. You do not need pip pack
 | 06 | [Exercises](06-exercises.md) | Apply path, data-flow and code-review skills |
 | 07 | [Knowledge check](07-knowledge-check.md) | Test your understanding before opening the answers |
 | 08 | [Knowledge answers](08-knowledge-answers.md) | Review explanations and correct misunderstandings |
-| 09 | [Source](09-source/README.md) | Inspect the complete runnable reference files |
-| 10 | [Tests](10-tests/README.md) | Inspect the complete automated checks |
+| 09 | [Complete reference project](project/README.md) | Inspect the three files that sit together in your practice folder |
+| 10 | [Test implementation](project/test_day01.py) | Inspect the complete automated checks |
 | 11 | [Practical assessment](11-practical-assessment.md) | Demonstrate reproduction, diagnosis and engineering judgment |
 | 12 | [Troubleshooting](12-troubleshooting.md) | Investigate errors by their actual failure boundary |
 | 13 | [Command reference](13-command-reference.md) | Review commands, expected behavior and precautions |
@@ -54,7 +55,7 @@ Read the notes first. During the lab, open the relevant walkthrough section befo
 
 ## Suggested session plan
 
-Allow approximately 60 minutes for the core class: 15 minutes for environment and concepts, 20 minutes for guided construction, 10 minutes for source review and verification, and 15 minutes for the knowledge check and assessment. The extended explanations, optional evidence tools and exercises can take additional time. Split the class when necessary rather than skipping a confusing concept.
+Complete installation separately if needed; compiling Python can take additional time. Allow approximately 60 minutes for the core class: 15 minutes for environment and concepts, 20 minutes for guided construction, 10 minutes for source review and verification, and 15 minutes for the knowledge check and assessment. The extended explanations, optional evidence tools and exercises can take additional time. Split the class when necessary rather than skipping a confusing concept.
 
 If you already have a verified first program, inspect the reference and demonstrate the corresponding outcome without repeating every introductory command. Your next meaningful work is the briefing, its explanation and its practical review.
 

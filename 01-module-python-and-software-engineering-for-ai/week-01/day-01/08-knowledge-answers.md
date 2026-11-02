@@ -4,7 +4,7 @@ Use these explanations after attempting the knowledge check. If an answer surpri
 
 ## 1. Executable and file
 
-python3 selects the executable. 09-source/support_briefing.py is an argument telling that interpreter which source file to open. The latter is a relative path interpreted from the shell's current directory. A correct interpreter name does not compensate for an incorrect script path.
+python3 selects the executable. support_briefing.py is an argument telling that interpreter which source file to open. The latter is a relative path interpreted from the shell's current directory. A correct interpreter name does not compensate for an incorrect script path.
 
 ## 2. Saving and publishing
 

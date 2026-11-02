@@ -1,24 +1,24 @@
-# 05. Testing and Verification
+# 05. Test Your Completed Project
 
-## 1. Start from requirements
+## Where the files must be
 
-You need evidence that the scripts execute and produce the specified behavior. The welcome script should print one exact welcome message. The briefing should print six specified lines, including its explicit verification limitation. Both should finish successfully without unexpected diagnostics.
+Continue inside your own veriqta-day-01 practice folder. first_agent.py, support_briefing.py and test_day01.py must be directly beside one another. You do not need a numbered source folder, a separate test folder or a PYTHONPATH setting.
 
-You also need to understand location dependence. Running a file by relative path requires the right current directory. Once Python receives the correct absolute script path, this application should not require a particular working directory because it opens no additional application files.
+If you are reading the repository reference, its project folder contains the same three files. Open that folder only when running the reference copy. Your practice folder and the repository folder are separate locations with the same application layout.
 
-The three reference tests check these requirements through real subprocess execution. They do not invent name, payment or user-input cases for an application that accepts no such runtime inputs yet.
+## What the checks do
 
-## 2. Prepare the test file
+The welcome test checks the exact greeting, empty stderr and exit 0. The briefing test checks all six required output lines, empty stderr and exit 0. The third test starts the briefing by absolute path from a different temporary working directory and checks the same contract. These are three execution tests, not a claim of production readiness.
 
-Continue in your practice day directory from the lab, containing 09-source and 10-tests. If you use the repository reference instead, start in this day-01 directory. In either case, the source and tests must keep the same sibling-folder layout.
+## Create the test file
 
-vi opens the test file. Enter insertion mode with i, save the complete implementation, then use Esc and :wq followed by Enter. Inspect an existing file before replacing it.
+vi opens a text file in your current folder. Press i, enter the complete code below, then save with Esc, :wq and Enter.
 
 ```bash
-vi 10-tests/test_day01.py
+vi test_day01.py
 ```
 
-The complete test implementation follows. Read its [walkthrough](03-code-walkthrough.md) to understand the process calls, paths and assertions. You may use the supplied implementation while learning how it works. You do not need to invent a testing framework or memorize class syntax on Day 01.
+Expected result. The editor opens for test_day01.py. After saving and quitting, the shell returns. The file must sit beside the two application scripts.
 
 ```python
 """Check the public Day 01 scripts through their process interface."""
@@ -29,8 +29,7 @@ import sys
 import tempfile
 import unittest
 
-DAY = Path(__file__).resolve().parents[1]
-SOURCE = DAY / "09-source"
+SOURCE = Path(__file__).resolve().parent
 EXPECTED_BRIEFING = [
     "VERIQTA Academy | Student support briefing",
     "Student: Sarah",
@@ -76,58 +75,28 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-## 3. Understand the discovery command
+The [walkthrough](03-code-walkthrough.md) explains the paths, subprocess calls and assertions. The supported implementation lets you start verifying behavior while the course introduces deeper Python structure progressively.
 
-python3 selects the interpreter. -m asks Python to run a module, here the built-in unittest runner. discover searches for test files. -s supplies the starting directory, 10-tests. -v requests individual test names and outcomes. The file test_day01.py matches the conventional discovery pattern.
+## Run the checks
 
-Run this from the day directory. The -s argument is a relative path, so it depends on this starting location. The tests themselves resolve the application paths from the test file's location.
-
-```bash
-python3 -m unittest discover -s 10-tests -v
-```
-
-Expected summary:
-
-```text
-Ran 3 tests in <variable duration>
-
-OK
-```
-
-The duration, line wrapping and some diagnostic wording depend on your environment. Expect three named methods. A zero-test run is not proof that the application passed. An import error, assertion failure or process timeout needs investigation.
-
-## 4. Interpret the result
-
-| Observation | What it means | Your next action |
-|---|---|---|
-| Three methods and OK | The checked requirements passed in this run | Record the actual command and summary |
-| Ran 0 tests | No matching tests were discovered | Inspect the directory, filename and test_ method names |
-| Assertion failure | Actual behavior differed from an expectation | Compare the expected contract with the actual source/result |
-| Error or traceback | Execution or test setup could not complete normally | Read the final exception and inspect its boundary |
-| Timeout | A bounded subprocess did not finish in time | Investigate the command and environment before increasing limits |
-
-The runner normally reports progress on stderr. That does not mean each application produced an error. The tests capture their child processes' streams and assert that successful application stderr is empty.
-
-## 5. Test a controlled regression
-
-A suite is more convincing when it detects an actual defect. The optional reference evidence tool performs this investigation in a temporary copy: run the working scripts, run the tests, introduce an undefined student variable, observe failure, restore source and rerun the suite.
-
-Inspect [reproduce_reference.py](15-evidence/reproduce_reference.py) before executing it. Run this optional section from the repository's day-01 directory, where the tool and its sibling source/test folders exist. If you only created the practice source and tests manually, you can instead perform the isolated debugging exercise in the practical assessment.
-
-python3 starts the tool. --output names a new result directory. The tool refuses an existing destination so that earlier evidence is preserved. Its internal commands run with bounded timeouts.
+python3 is the interpreter. -m runs a module. unittest is the built-in test runner, not a package you must download. -v shows individual method results. test_day01 names the test file as a module, without its .py ending.
 
 ```bash
-python3 15-evidence/reproduce_reference.py --output veriqta-day01-evidence
+python3 -m unittest -v test_day01
 ```
 
-Expect a success message only after the tool has checked the normal contract, detected the deliberate regression and verified recovery. Inspect its JSON records for the actual streams and exit codes. The source in your reference day folder is not edited by the regression step.
+Expected result. Three named methods should appear and the summary should report Ran 3 tests followed by OK. Duration varies. If any test reports FAIL or ERROR, keep the actual message and investigate it. A test-runner result on stderr is not automatically an application error; the tests separately inspect their child processes' streams.
 
-## 6. Explain what passing does not establish
+## Interpret a problem
 
-The checks do not prove input validation, model accuracy, payment truth, authentication, network reliability or production readiness. The program has no external-system boundary yet. They also do not demonstrate your own understanding.
+If the runner cannot import test_day01, inspect pwd and ls to confirm that you are in the folder containing that file. If it cannot open an application script, inspect whether all three files sit together. If an assertion fails, compare actual behavior with the requirement. Do not change expected values merely to accept incorrect source.
 
-The suite checks a presentation contract intentionally. If requirements later change, review both the implementation and the contract. Do not change the expected fields simply to make a misspelled variable or missing output line appear correct.
+If you get a zero-test report, check the test method names and complete saved file. The reference has three methods beginning with test_. A zero-test success does not verify the application.
 
-## 7. Record your own verification
+## Verify recovery from a real defect
 
-Keep your actual Python version, source revision or saved files, exact command, test count and outcome. Save any failure and its correction. Use screenshots only from genuine execution, remove sensitive context and retain text output when possible. Reference output panels show what actually ran in the reference environment; they are not your assessment evidence.
+The [practical assessment](11-practical-assessment.md) teaches a safe manual debugging copy. The optional [reference evidence tool](15-evidence/README.md) performs a similar investigation in an isolated temporary project, captures the failure and verifies recovery. The complete follow-along project supplies every core command, so this optional reference utility is not required just to build the application.
+
+## Keep your own evidence
+
+Record your actual Python version, source, exact command, complete test summary and any diagnosed failure. Expected output is a prediction; actual output comes from execution. A reference pass is not your personal assessment. These checks do not establish payment verification, enrollment authority, dynamic-input validation or deployment security.

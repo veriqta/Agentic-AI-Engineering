@@ -2,9 +2,9 @@
 
 Attempt these questions before opening the [answers](08-knowledge-answers.md). Use the source and notes when needed. The objective is practical understanding, not memorization.
 
-1. In python3 09-source/support_briefing.py, which part selects the executable and which part selects the source file?
+1. In python3 support_briefing.py, which part selects the executable and which part selects the source file?
 2. You saved a file in vi, but the public GitHub repository has not changed. Why is that expected?
-3. Your shell is in a different directory and Python cannot open 09-source/support_briefing.py. Which two observations would you make before editing source?
+3. Your shell is in a different directory and Python cannot open support_briefing.py. Which two observations would you make before editing source?
 4. What does student_name = "Sarah" do? Does the assignment display output or fetch a student record?
 5. Explain the roles of f, the quoted text and {student_name} in print(f"Student: {student_name}").
 6. What can happen if the f prefix is removed? Why might exit 0 still be insufficient evidence of correctness?

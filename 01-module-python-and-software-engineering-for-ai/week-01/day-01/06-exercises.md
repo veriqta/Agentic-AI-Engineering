@@ -10,7 +10,7 @@ Expected outcome. You connect data to presentation without inventing a database,
 
 ## Exercise 2. Diagnose a location problem
 
-Start from the directory containing 09-source. Explain how the relative path to support_briefing.py changes if your shell enters 09-source itself. Do not move or delete the source. Use pwd and ls to verify your reasoning, then execute using the appropriate relative path. Return to the day directory afterward.
+Start from the directory containing project. Explain how the relative path to support_briefing.py changes if your shell enters project itself. Do not move or delete the source. Use pwd and ls to verify your reasoning, then execute using the appropriate relative path. Return to the day directory afterward.
 
 Expected outcome. You distinguish a file's location from the caller's current directory. You can also explain why the portability test uses an absolute script path.
 
