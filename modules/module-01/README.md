@@ -10,11 +10,17 @@ Understand the architecture, implement a working system, evaluate its behavior, 
 
 ## Weekly learning path
 
-1. Core concepts and first runnable baseline.
-2. Practical integration and project development.
-3. Failure handling, testing, security and observability.
-4. Verified portfolio milestone, documentation and independent assessment.
+| Week | Focus | State |
+|---|---|---|
+| [01](week-01/README.md) | Python foundations through student support | In progress; execution milestone verified, assessment pending |
+| 02 | Professional Python development | Planned |
+| 03 | APIs and external systems | Planned |
+| 04 | Integrated project and assessment | Planned |
 
-## Lessons
+## Classroom lessons
 
-Lesson materials will be published only after teaching, execution and review. Start with the [lesson template](../../templates/lesson/README.md).
+[Lesson 01: Student Support Automation](week-01/lessons/lesson-01/README.md) includes full notes, a guided lab, code walkthrough, source, tests, knowledge checks, practical assessment and troubleshooting.
+
+## Portfolio deliverable
+
+The [Student Support Automation Toolkit](module-project/README.md) requires all four weeks and a separate integrated assessment. Module 01 remains in progress.

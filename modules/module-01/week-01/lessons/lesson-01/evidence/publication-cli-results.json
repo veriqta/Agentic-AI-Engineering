@@ -1,0 +1,38 @@
+{
+  "python": "3.12.14",
+  "checks": [
+    {
+      "input_status": " Paid ",
+      "exit_code": 0,
+      "stdout": "{\"message\": \"Hello Sarah, your course access is approved.\"}\n",
+      "stderr": "INFO Support response generated.\n"
+    },
+    {
+      "input_status": "unpaid",
+      "exit_code": 0,
+      "stdout": "{\"message\": \"Hello Sarah, please verify your payment.\"}\n",
+      "stderr": "INFO Support response generated.\n"
+    },
+    {
+      "input_status": "unknown",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "ERROR Request rejected: Unsupported payment status.\n"
+    },
+    {
+      "example": "first_agent.py",
+      "exit_code": 0,
+      "stdout": "Welcome to Agentic AI Engineering\n"
+    },
+    {
+      "example": "decision_agent.py",
+      "exit_code": 0,
+      "stdout": "Access granted to VERIQTA Academy\n"
+    },
+    {
+      "example": "student_support_baseline.py",
+      "exit_code": 0,
+      "stdout": "Hello Sarah, your course access is approved.\n"
+    }
+  ]
+}

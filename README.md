@@ -6,7 +6,7 @@
 <p align="center"><strong>Learn by building. Verify with evidence. Engineer for production.</strong></p>
 <p align="center">An open, project-based learning journey by VERIQTA.</p>
 
-> **Status:** Classroom scaffolding. Lessons and outcomes are published only after actual lab verification. This repository is an educational resource, not a claim that every project is production certified.
+> **Status:** Classroom foundation plus the Module 01 Student Support Automation implementation and teaching materials. Its execution milestone is verified; understanding assessments remain open. No week or module completion is claimed.
 
 ## Start here
 
@@ -17,6 +17,8 @@ Check the [publication status](docs/PROGRESS.md) for available materials. Use th
 3. Open a module, then choose a lesson. Read its objectives, follow-along lab, and exercises.
 4. Run the tests and compare your actual outputs with documented expectations.
 5. Build your own version. Never publish credentials, private data, or sensitive infrastructure screenshots.
+
+Start the [Student Support Automation lesson](modules/module-01/week-01/lessons/lesson-01/README.md) for the first guided project.
 
 ## What you will learn
 
@@ -80,3 +82,4 @@ Corrections, accessible explanations, tests, and reproducibility improvements ar
 ## About VERIQTA
 
 VERIQTA creates practical technical learning resources. This repository is an educational classroom and portfolio; any external service or tool mentioned remains the property of its respective owner.
+
