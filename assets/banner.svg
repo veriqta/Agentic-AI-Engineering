@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#00382F"/><stop offset="1" stop-color="#087b6c"/></linearGradient></defs><rect width="1200" height="360" rx="24" fill="url(#g)"/><g stroke="#7ef0d3" opacity=".28" fill="none" stroke-width="2"><circle cx="1020" cy="170" r="110"/><circle cx="1020" cy="170" r="66"/><path d="M860 170h320M1020 10v320M920 70l200 200M1120 70L920 270"/></g><g font-family="Arial,sans-serif" fill="white"><text x="64" y="102" font-size="22" letter-spacing="4" fill="#9df5dc">VERIQTA OPEN ENGINEERING CLASSROOM</text><text x="64" y="178" font-size="56" font-weight="bold">AGENTIC AI</text><text x="64" y="243" font-size="56" font-weight="bold">ENGINEERING</text><text x="64" y="302" font-size="23" fill="#c6f3e6">52 weeks  |  13 modules  |  Build, test, secure, deploy</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title description">
+<title id="title">VERIQTA Academy. Agentic AI Engineering</title>
+<desc id="description">A 52-week engineering course with 13 modules and seven daily classes per week, progressing through software, models, agent systems and production operations.</desc>
+<defs><linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00382F"/><stop offset="1" stop-color="#0B5A49"/></linearGradient><pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M 72 0 L 0 0 0 72" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="1"/></pattern></defs>
+<rect width="1080" height="1350" fill="#F6F8F3"/>
+<rect width="1080" height="825" fill="url(#green)"/>
+<rect width="1080" height="825" fill="url(#grid)"/>
+<rect x="68" y="72" width="8" height="68" fill="#BEEDB8"/>
+<g font-family="Arial, sans-serif">
+<text x="100" y="103" fill="#FFFFFF" font-size="30" font-weight="700" letter-spacing="3">VERIQTA ACADEMY</text>
+<text x="100" y="136" fill="#D0E8DB" font-size="19" letter-spacing="2">PUBLIC ENGINEERING CLASSROOM</text>
+<text x="68" y="268" fill="#FFFFFF" font-size="94" font-weight="700">AGENTIC AI</text>
+<text x="68" y="368" fill="#FFFFFF" font-size="78" font-weight="700">ENGINEERING</text>
+<rect x="68" y="416" width="110" height="5" fill="#BEEDB8"/>
+<text x="68" y="484" fill="#E2F1E7" font-size="31">Understand the system.</text>
+<text x="68" y="532" fill="#E2F1E7" font-size="31">Build it. Test it. Learn to operate it.</text>
+<rect x="68" y="604" width="944" height="153" rx="16" fill="#FFFFFF" fill-opacity="0.09" stroke="#FFFFFF" stroke-opacity="0.25"/>
+<path d="M 384 636 V 725 M 698 636 V 725" stroke="#FFFFFF" stroke-opacity="0.25"/>
+<text x="104" y="674" fill="#FFFFFF" font-size="54" font-weight="700">52</text><text x="104" y="714" fill="#D0E8DB" font-size="23">WEEKS</text>
+<text x="420" y="674" fill="#FFFFFF" font-size="54" font-weight="700">13</text><text x="420" y="714" fill="#D0E8DB" font-size="23">MODULES</text>
+<text x="734" y="674" fill="#FFFFFF" font-size="54" font-weight="700">7</text><text x="734" y="714" fill="#D0E8DB" font-size="23">DAYS PER WEEK</text>
+<text x="68" y="896" fill="#00382F" font-size="26" font-weight="700" letter-spacing="2">YOUR ENGINEERING PROGRESSION</text>
+<rect x="68" y="938" width="450" height="105" rx="12" fill="#FFFFFF" stroke="#D8E2D8"/><rect x="542" y="938" width="470" height="105" rx="12" fill="#FFFFFF" stroke="#D8E2D8"/>
+<text x="94" y="980" fill="#47705E" font-size="18">01 TO 03</text><text x="94" y="1019" fill="#00382F" font-size="26" font-weight="700">Python, models and tools</text>
+<text x="568" y="980" fill="#47705E" font-size="18">04 TO 06</text><text x="568" y="1019" fill="#00382F" font-size="26" font-weight="700">Memory, RAG and workflows</text>
+<rect x="68" y="1063" width="450" height="105" rx="12" fill="#FFFFFF" stroke="#D8E2D8"/><rect x="542" y="1063" width="470" height="105" rx="12" fill="#FFFFFF" stroke="#D8E2D8"/>
+<text x="94" y="1105" fill="#47705E" font-size="18">07 TO 10</text><text x="94" y="1144" fill="#00382F" font-size="26" font-weight="700">MCP, agents and assurance</text>
+<text x="568" y="1105" fill="#47705E" font-size="18">11 TO 13</text><text x="568" y="1144" fill="#00382F" font-size="26" font-weight="700">Deployment and capstone</text>
+<path d="M 68 1225 H 1012" stroke="#C8D7CB"/>
+<text x="68" y="1270" fill="#00382F" font-size="23" font-weight="700">EXPLAIN. BUILD. VERIFY.</text>
+<text x="1012" y="1270" fill="#47705E" font-size="20" text-anchor="end">VERIQTA</text>
+</g></svg>
