@@ -1,6 +1,0 @@
-{
-  "reference_tests_passed": true,
-  "controlled_regression_detected": true,
-  "recovery_tests_passed": true,
-  "scope": "Local reference application only; no payment provider or deployment."
-}
