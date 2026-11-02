@@ -6,7 +6,7 @@
 <text x="70" y="156" font-size="36" font-weight="700">Detect a defect and verify recovery</text>
 <text x="70" y="210" font-size="23">Module 01, Week 01, Day 01</text>
 <text x="70" y="253" font-size="21">Actual execution, rendered output panel</text>
-<text x="70" y="290" font-size="20">Python 3.12.14 | Linux reference run</text>
+<text x="70" y="290" font-size="20">Python 3.15.2 | Linux reference run</text>
 <text x="70" y="339" font-size="22" font-weight="700">Controlled change in an isolated temporary copy</text>
 <text x="70" y="370" font-size="19">The Student output referenced student_nam instead of student_name. The reference </text>
 <text x="70" y="396" font-size="19">source was preserved.</text>
@@ -15,14 +15,14 @@
 <text x="70" y="498" font-size="19">NameError: name &#x27;student_nam&#x27; is not defined. Did you mean: &#x27;student_name&#x27;?</text>
 <text x="70" y="543" font-size="22" font-weight="700">Actual failing-run summary excerpt</text>
 <text x="70" y="574" font-size="19">----------------------------------------------------------------------</text>
-<text x="70" y="600" font-size="19">Ran 3 tests in 0.061s</text>
+<text x="70" y="600" font-size="19">Ran 3 tests in 0.261s</text>
 <text x="70" y="626" font-size="19"> </text>
 <text x="70" y="652" font-size="19">FAILED (failures=2)</text>
 <text x="70" y="697" font-size="22" font-weight="700">Actual failing exit status</text>
 <text x="70" y="728" font-size="19">1</text>
 <text x="70" y="773" font-size="22" font-weight="700">Actual restored-run summary excerpt</text>
 <text x="70" y="804" font-size="19">----------------------------------------------------------------------</text>
-<text x="70" y="830" font-size="19">Ran 3 tests in 0.089s</text>
+<text x="70" y="830" font-size="19">Ran 3 tests in 0.086s</text>
 <text x="70" y="856" font-size="19"> </text>
 <text x="70" y="882" font-size="19">OK</text>
 <text x="70" y="927" font-size="22" font-weight="700">Actual recovery exit status</text>

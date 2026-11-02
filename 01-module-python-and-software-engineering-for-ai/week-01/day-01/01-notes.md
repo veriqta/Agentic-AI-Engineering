@@ -51,7 +51,7 @@ If you enter Python source such as print directly into Bash, Bash does not becom
 
 A directory groups files. A path identifies a file or directory. An absolute path begins at the filesystem root, represented by /. A relative path is interpreted from the current working directory.
 
-If your shell is in a folder containing first_agent.py, the relative filename first_agent.py is enough. If the file is in a child directory named 09-source, the relative path is 09-source/first_agent.py. If you run from another directory, the same text may point somewhere else or fail to find a file.
+If your shell is in a folder containing first_agent.py, the relative filename first_agent.py is enough. This class puts the practice files directly in veriqta-day-01, so no child-directory prefix is needed. If you run from another directory, the same text may point somewhere else or fail to find a file.
 
 pwd prints your current working directory. cd changes that directory in the current shell. ls lists entries. You use these commands to establish context, not as a ritual before every program. When Python reports that it cannot open a file, check location and spelling before changing the source.
 
@@ -59,15 +59,15 @@ Linux filenames are normally case-sensitive. first_agent.py and First_Agent.py c
 
 ### Navigation folders and Python names
 
-Numbered folders such as 09-source organize the reading order. Source filenames remain ordinary Python names such as first_agent.py. This keeps the classroom navigable without introducing unnecessary module-loading complexity. Later classes will explain imports and reusable modules in detail.
+Numbers on teaching documents organize the public reading sequence. The repository's project folder stores the reference Python files together. Those labels are not Python language requirements. In your practice folder, first_agent.py, support_briefing.py and test_day01.py sit directly beside one another. You do not create numbered source or test directories. Later classes will introduce additional folders only when their purpose is taught.
 
 ## 5. Check the environment you actually have
 
 python3 --version asks the interpreter to report its version. The result depends on your installation. Record your actual output rather than copying a version from this page or a reference image.
 
-This class targets Python 3.12 or later and uses basic standard-library features. The exact reference version is recorded with the execution evidence. Testing one reference environment does not prove behavior on every release, editor or operating system.
+This edition installs and selects Python 3.15.2, the stable release verified on November 2, 2026, using the complete setup guide. The exact reference version is recorded with the execution evidence. Testing one reference environment does not prove behavior on every release, editor or operating system.
 
-If python3 is missing, the class cannot execute yet. Use a supported interpreter installation for your operating system or seek environment-specific setup help. Do not replace Ubuntu's system interpreter or alter system symlinks just to imitate a screenshot. Installation and operating-system maintenance need instructions appropriate to the environment.
+If python3 is missing, complete [the Ubuntu installation guide](00-ubuntu-python-setup.md). It gives exact commands, dependencies, expected results and a private installation destination. Select that interpreter in your current shell and verify its version before the programming lab. Do not replace Ubuntu's system interpreter or alter system symlinks.
 
 vi also needs to be available. The command vi --version commonly works with Vim-based installations, but traditional vi variants may not support it. This lesson uses the basic editing operations shared by common vi-compatible editors and does not require a particular plugin or configuration.
 
@@ -198,7 +198,7 @@ You are not expected to memorize every command or reproduce the source from memo
 
 Use these official references to revisit specific concepts. They supplement the teaching above rather than replace the guided class.
 
-- [Python interpreter usage](https://docs.python.org/3.12/tutorial/interpreter.html).
-- [Python introduction, strings and assignment](https://docs.python.org/3.12/tutorial/introduction.html).
-- [unittest reference](https://docs.python.org/3.12/library/unittest.html).
-- [subprocess reference](https://docs.python.org/3.12/library/subprocess.html).
+- [Python interpreter usage](https://docs.python.org/3.15/tutorial/interpreter.html).
+- [Python introduction, strings and assignment](https://docs.python.org/3.15/tutorial/introduction.html).
+- [unittest reference](https://docs.python.org/3.15/library/unittest.html).
+- [subprocess reference](https://docs.python.org/3.15/library/subprocess.html).

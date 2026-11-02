@@ -130,7 +130,7 @@ Do not describe this as production-ready. Its useful engineering outcome is a sm
 
 ## 6. Understand the automated checks without memorizing their framework
 
-The complete [test file](10-tests/test_day01.py) uses Python's standard library. Its job is to execute the same files you run manually and compare the real result with requirements.
+The complete [test file](project/test_day01.py) uses Python's standard library. Its job is to execute the same files you run manually and compare the real result with requirements.
 
 | Test-code element | Responsibility |
 |---|---|
@@ -139,11 +139,10 @@ The complete [test file](10-tests/test_day01.py) uses Python's standard library.
 | sys.executable | Selects the interpreter already running the tests |
 | tempfile | Provides a disposable working directory for the portability check |
 | unittest | Supplies discovery, assertions and result reporting |
-| DAY | Resolves the current day folder from the test file location |
-| SOURCE | Refers to its 09-source child folder |
+| SOURCE | Refers to the folder containing the test and application files |
 | EXPECTED_BRIEFING | States the required six output lines independently of the script |
 
-Path(__file__) begins with the test file's location. resolve makes it absolute. parents[0] is 10-tests and parents[1] is the day directory. Joining 09-source then locates the source folder independently of the process's current directory.
+Path(__file__) identifies the test file. resolve makes its path absolute. parent selects the folder holding that file. Because the application files sit beside the test file, SOURCE points to all three without a numbered directory or a guessed caller location. In your practice work, that folder is veriqta-day-01.
 
 The class inherits unittest.TestCase to obtain assertion methods. A method is a function defined inside a class. self refers to the current test instance. You are not expected to design an object-oriented application today; these few constructs support the supplied checks and will be revisited as your Python skills develop.
 
@@ -169,7 +168,7 @@ The third test creates a temporary directory and runs the briefing from there us
 
 ### Test runner guard
 
-The final comparison checks whether the test file is being run directly. If so, unittest.main starts the runner. The documented discovery command can also load the file and discover test_ methods without that direct-execution branch running. Imports, classes and this guard are explained here only to make the verification reference readable; the core application remains ordinary assignments and output.
+The final comparison checks whether the test file is being run directly. If so, unittest.main starts the runner. The documented unittest command loads the named test_day01 module and finds its test_ methods without that direct-execution branch running. Imports, classes and this guard are explained here only to make the verification reference readable; the core application remains ordinary assignments and output.
 
 ## 7. Review a proposed change
 

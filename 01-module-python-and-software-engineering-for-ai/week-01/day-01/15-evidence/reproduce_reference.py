@@ -51,9 +51,9 @@ def main():
     def save(name, value):
         (output / name).write_text(json.dumps(value, indent=2) + "\n")
 
-    files = [DAY / "09-source/first_agent.py",
-             DAY / "09-source/support_briefing.py",
-             DAY / "10-tests/test_day01.py"]
+    files = [DAY / "project/first_agent.py",
+             DAY / "project/support_briefing.py",
+             DAY / "project/test_day01.py"]
     save("01-environment.json", {
         "python": platform.python_version(),
         "system": platform.system(),
@@ -62,27 +62,26 @@ def main():
     })
     with tempfile.TemporaryDirectory() as temporary:
         root = Path(temporary)
-        shutil.copytree(DAY / "09-source", root / "09-source")
-        shutil.copytree(DAY / "10-tests", root / "10-tests")
-        welcome = execute([sys.executable, "09-source/first_agent.py"], root)
+        shutil.copytree(DAY / "project", root, dirs_exist_ok=True)
+        welcome = execute([sys.executable, "first_agent.py"], root)
         save("02-welcome.json", welcome)
         require(welcome["exit_code"] == 0 and welcome["stderr"] == "" and
                 welcome["stdout"] == "Welcome to Agentic AI Engineering\n",
                 "Welcome contract failed.")
-        briefing = execute([sys.executable, "09-source/support_briefing.py"], root)
+        briefing = execute([sys.executable, "support_briefing.py"], root)
         save("03-briefing.json", briefing)
         require(briefing["exit_code"] == 0 and briefing["stderr"] == "" and
                 briefing["stdout"].splitlines() == EXPECTED, "Briefing contract failed.")
-        suite = [sys.executable, "-m", "unittest", "discover", "-s", "10-tests", "-v"]
+        suite = [sys.executable, "-m", "unittest", "-v", "test_day01"]
         tests = execute(suite, root)
         save("04-tests.json", tests)
         require(tests["exit_code"] == 0 and "Ran 3 tests" in tests["stderr"],
                 "Expected three passing test methods.")
-        missing = execute([sys.executable, "09-source/missing_briefing.py"], root)
+        missing = execute([sys.executable, "missing_briefing.py"], root)
         save("05-missing-path.json", missing)
         require(missing["exit_code"] != 0 and missing["stdout"] == "" and
                 "No such file" in missing["stderr"], "Expected missing-path failure.")
-        source = root / "09-source/support_briefing.py"
+        source = root / "support_briefing.py"
         original = source.read_text()
         changed = original.replace('print(f"Student: {student_name}")',
                                    'print(f"Student: {student_nam}")', 1)

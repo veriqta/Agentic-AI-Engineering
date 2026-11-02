@@ -6,8 +6,7 @@ import sys
 import tempfile
 import unittest
 
-DAY = Path(__file__).resolve().parents[1]
-SOURCE = DAY / "09-source"
+SOURCE = Path(__file__).resolve().parent
 EXPECTED_BRIEFING = [
     "VERIQTA Academy | Student support briefing",
     "Student: Sarah",
