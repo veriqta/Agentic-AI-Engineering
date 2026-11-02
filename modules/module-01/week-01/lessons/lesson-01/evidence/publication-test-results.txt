@@ -1,0 +1,17 @@
+Publication environment: Python 3.12.14
+Command from lesson directory: PYTHONPATH=src python3 -m unittest discover -s tests -v
+
+test_invalid_request_has_no_success_output (test_student_support.CommandLineTests.test_invalid_request_has_no_success_output) ... ok
+test_successful_json_output (test_student_support.CommandLineTests.test_successful_json_output) ... ok
+test_unpaid_request_returns_valid_json (test_student_support.CommandLineTests.test_unpaid_request_returns_valid_json) ... ok
+test_invalid_statuses (test_student_support.PaymentTests.test_invalid_statuses) ... ok
+test_non_paid_statuses (test_student_support.PaymentTests.test_non_paid_statuses) ... ok
+test_paid_variations (test_student_support.PaymentTests.test_paid_variations) ... ok
+test_approved_response_and_name_cleanup (test_student_support.ResponseTests.test_approved_response_and_name_cleanup) ... ok
+test_invalid_names (test_student_support.ResponseTests.test_invalid_names) ... ok
+test_unpaid_response (test_student_support.ResponseTests.test_unpaid_response) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.193s
+
+OK

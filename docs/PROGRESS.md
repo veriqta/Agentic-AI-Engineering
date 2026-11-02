@@ -1,18 +1,17 @@
-# Publication Status
+# Classroom Publication and Verification Status
 
-This repository follows a 52-week roadmap across 13 modules. Scheduled weeks describe the intended learning sequence, not completed or released lessons.
+The program contains 52 weeks across 13 modules. A scheduled week is not a completed week. Public status describes materials and evidence, not private learner records.
 
-## Available materials
+| Scope | State | Next requirement |
+|---|---|---|
+| Repository foundation | Published | Maintain navigation and standards |
+| Module 01, Week 01 | In progress | Finish foundation objectives and assessment |
+| Student Support Automation implementation | Verified execution milestone | Complete understanding review |
+| Student Support Automation lesson | In progress, proposed in PR | Assess, review and approve before completion/merge |
+| Module 01, Weeks 02 to 04 | Planned | Professional Python, APIs and integrated project |
+| Module 01 portfolio assessment | Planned | End-to-end deliverable and review |
+| Modules 02 to 13 | Planned | Follow the 52-week roadmap |
 
-- The full module roadmap and portfolio milestones.
-- Environment setup and a project-based learning guide.
-- Lesson, lab, project, knowledge-check and assessment templates.
-- Contribution, security and evidence standards.
+Start with the [Student Support Automation classroom](../modules/module-01/week-01/lessons/lesson-01/README.md). Read its [verification record](../modules/module-01/week-01/lessons/lesson-01/verification.md) for actual results, provenance and limitations.
 
-## Lesson availability
-
-The current release contains the classroom structure and templates. No runnable lesson implementations, execution screenshots or completed assessments are included yet. Module pages will link to lesson materials as they become available.
-
-## Verification standard
-
-Published execution claims must identify the source revision, environment, commands, actual results and reviewed evidence. Template headings and expected output examples are not proof of execution. Personal learning records are kept separate from public release status.
+Planned, in progress, executed, verified, assessed, completed and published describe distinct events. A test run does not establish understanding or completion. A feature branch and PR do not establish publication on main. Only actual results may be claimed, and unfinished assessments remain explicit.
