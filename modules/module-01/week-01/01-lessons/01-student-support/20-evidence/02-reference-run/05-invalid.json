@@ -1,0 +1,13 @@
+{
+  "arguments": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "16-source/01_student_support.py",
+    "--name",
+    "Sarah",
+    "--payment-status",
+    "unknown"
+  ],
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "ERROR Request rejected: Unsupported payment status.\n"
+}

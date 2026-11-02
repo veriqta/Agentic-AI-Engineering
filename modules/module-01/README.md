@@ -19,8 +19,8 @@ Understand the architecture, implement a working system, evaluate its behavior, 
 
 ## Classroom lessons
 
-[Lesson 01: Student Support Automation](week-01/lessons/lesson-01/README.md) includes full notes, a guided lab, code walkthrough, source, tests, knowledge checks, practical assessment and troubleshooting.
+[Lesson 01: Student Support Automation](week-01/01-lessons/01-student-support/00-README.md) includes full notes, a guided lab, code walkthrough, source, tests, knowledge checks, practical assessment and troubleshooting.
 
 ## Portfolio deliverable
 
-The [Student Support Automation Toolkit](module-project/README.md) requires all four weeks and a separate integrated assessment. Module 01 remains in progress.
+The [Student Support Automation Toolkit](05-module-project/README.md) requires all four weeks and a separate integrated assessment. Module 01 remains in progress.
